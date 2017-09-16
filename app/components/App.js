@@ -16,10 +16,10 @@ import {
 } from 'react-native';
 import Auth0 from 'react-native-auth0';
 
-var credentials = require('./auth0-credentials');
+var credentials = require('../auth0-credentials');
 const auth0 = new Auth0(credentials);
 
-export default class Auth0Sample extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = { accessToken: null };
@@ -32,12 +32,23 @@ export default class Auth0Sample extends Component {
         audience: 'https://' + credentials.domain + '/userinfo'
       })
       .then(credentials => {
-        Alert.alert(
-          'Success',
-          'AccessToken: ' + credentials.accessToken,
-          [{ text: 'OK', onPress: () => console.log('OK Pressed') }],
-          { cancelable: false }
-        );
+        // Alert.alert(
+        //   'Success',
+        //   'AccessToken: ' + credentials.accessToken,
+        //   [{ text: 'OK', onPress: () => console.log('OK Pressed') }],
+        //   { cancelable: false }
+        // );
+        auth0.auth
+          .userInfo({token: credentials.accessToken})
+          .then(info => {
+            // let user_id = info.sub.match(/auth0\|(.+)/)[1];
+            auth0.users(credentials.idToken)
+              .patchUser({id: info.sub, metadata: {"hello": "joe"}})
+              .then(x => console.log(x))
+              .catch(e => console.log(e));
+          })
+          .catch(error => console.log(error));
+        console.log(credentials);
         this.setState({ accessToken: credentials.accessToken });
       })
       .catch(error => console.log(error));
@@ -60,7 +71,7 @@ export default class Auth0Sample extends Component {
     let loggedIn = this.state.accessToken === null ? false : true;
     return (
       <View style={styles.container}>
-        <Text style={styles.header}>Auth0Sample - Login</Text>
+        <Text style={styles.header}>Mystro - Login</Text>
         <Text>
           You are {loggedIn ? '' : 'not '}logged in.
         </Text>
@@ -87,4 +98,4 @@ const styles = StyleSheet.create({
   }
 });
 
-AppRegistry.registerComponent('Auth0Sample', () => Auth0Sample);
+module.exports = App;
