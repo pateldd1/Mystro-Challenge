@@ -15,10 +15,6 @@ import {
   Text,
   View
 } from 'react-native';
-// import Auth0 from 'react-native-auth0';
-//
-// var credentials = require('../auth0-credentials');
-// const auth0 = new Auth0(credentials);
 
 export default class App extends Component {
   constructor(props) {
@@ -47,6 +43,7 @@ export default class App extends Component {
     // let preferences = () => {
     //
     // }
+    console.log("hihihildashf");
     return (
       <View style={styles.container}>
         <Text style={styles.header}>Mystro - Login</Text>
