@@ -1,4 +1,6 @@
 import { merge } from 'lodash';
+RECEIVED_USER = 'RECEIVED_USER';
+UNAUTH_USER = 'UNAUTH_USER';
 
 //This is our default state of the user.
 //Because of this, our User will have a default of all of this.
@@ -8,15 +10,20 @@ import { merge } from 'lodash';
 //we will make a thunk action creator called 'requestTransactions(user_id)'. This will go to the backend and get the transactions AND balance
 //and then this will force a re-rendering of the home page with those database values. Look at the authactions for followup documentation
 
-var defaultState = {
+let defaultState = {
   user_id: undefined,
-  accessToke: undefined
+  accessToken: undefined,
+  idToken: undefined
 };
 
 //We have to use Object.assign for a shallow merging and merge for a deep merging which would also merge the inner arrays of the object.
 module.exports = (state=defaultState, action) => {
   Object.freeze(state);
   switch(action.type) {
+    case RECEIVED_USER:
+      return Object.assign({}, state, action);
+    case UNAUTH_USER:
+      return Object.assign({}, state, defaultState);
     default:
       return state;
   }
