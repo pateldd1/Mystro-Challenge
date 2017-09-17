@@ -16,7 +16,7 @@ import {
   View
 } from 'react-native';
 
-export default class App extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this._onLogin = this._onLogin.bind(this);

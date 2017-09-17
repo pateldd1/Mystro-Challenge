@@ -13,6 +13,12 @@ export default () => {
   // Navigation.registerComponent('PreferenceTwo', ()=> PreferenceTwo);
   // Navigation.registerComponent('PreferenceThree', ()=> PreferenceThree);
 
+  // Navigation.startSingleScreenApp({
+  //   screen: {
+  //     screen: 'App',
+  //     title: 'App'
+  //   }
+  // })
   Navigation.startTabBasedApp({
     tabs: [
       {

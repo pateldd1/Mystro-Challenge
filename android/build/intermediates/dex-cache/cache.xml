@@ -3,273 +3,57 @@
 
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jar="/Users/dpatel/.android/build-cache/a07b4556a4634d6d481d98149f35986aa0434e81/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_95d7ab3e8b1dc0fbf94a0528a74209999a3e32a4.jar" />
+        sha1="1f6ff1728c297524e82b875ce2dfda946f4bca41">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_20eb68388d835cba3da87e385967b65098cd53fe.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jar="/Users/dpatel/Documents/mystro/node_modules/react-native-navigation/android/app/build/intermediates/bundles/default/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_beb0c2a1b423e379e9e363bb25fdd9a459896992.jar" />
+        sha1="a1ee08e5de35079c2d5542633552d5aee66f5b3c">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_d4b7e05b1b931d94a30d2eb29b1c707723b8d091.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_0351bdd1bd728a920c88351ca17a7a998021fb04.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_beb0c2a1b423e379e9e363bb25fdd9a459896992.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_b69247004705e50f02c5b7a0b8ff82ddf6b1d43e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_95d7ab3e8b1dc0fbf94a0528a74209999a3e32a4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.android.support/customtabs/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e4a9d42c6d45eed4fd52f28dee859884131eae4c">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.android.support-customtabs-23.0.1_81664bc011dde2302cfd413b246b2309e17118f4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_cf48d3fba5d45519e62f192aa5907ca218d87ec3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_b69247004705e50f02c5b7a0b8ff82ddf6b1d43e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_0cbde2bc04ba5687fbd738166135fd010bf64a76.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.android.support/customtabs/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="e4a9d42c6d45eed4fd52f28dee859884131eae4c">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.android.support-customtabs-23.0.1_81664bc011dde2302cfd413b246b2309e17118f4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.3.1_301ac622ad93758c96737e8de88564dee215356f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_cf48d3fba5d45519e62f192aa5907ca218d87ec3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.3.1_82967221896e68b159c0658888828594105b15c2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_b8482f2375ba2c0a9fdf4da2695dac15bf8f7026.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/Auth0Sample/react-native-auth0/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="518d34d9c79c480b2d108c46235f4683630acd06">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/Auth0Sample-react-native-auth0-unspecified_919ab8f90c7d9d4de12ed66a6e1c89b4031bbb28.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_0cbde2bc04ba5687fbd738166135fd010bf64a76.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.1_3174c2af9a96033894b35821067535e80a55b3d8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_6f3ff7cc5c0abbfcd03b20f1bf5efb3239021482.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_4fc6f001c8cfc6b8fa480ff628ba2d48578cbdb3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.1_2c8b603f50425e122accca49064ddd8d9c15d20c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu-toolbar/1.5.4/jars/classes.jar"
+        jar="/Users/dpatel/.android/build-cache/42db9843af6fde2791db4de30a27152597f0e83a/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="55d7bf547c88cb7c8c7c5cdbf3b06dd66c9750f8">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.balysv.materialmenu-material-menu-toolbar-1.5.4_334d0c2742fbd8c489160316922a5b53ff837a6c.jar" />
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_f4547f4a27417db6809da53a7eb86c95d17dd085.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_6f3ff7cc5c0abbfcd03b20f1bf5efb3239021482.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_6ebba981e1940a2e1e2ec8d2b4ab5aec8c8e8c11.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.3.1_0ab5add7c345fac47b04d5eacf952555a4a5dc25.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_674f6bdd4c7ef195c9035dc6f8e64999fb613baa.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_4fc6f001c8cfc6b8fa480ff628ba2d48578cbdb3.jar" />
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_beb0c2a1b423e379e9e363bb25fdd9a459896992.jar" />
     </item>
     <item
         is-multidex="false"
         jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.1"
+        revision="23.0.1"
         sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
         <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_0351bdd1bd728a920c88351ca17a7a998021fb04.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_27cb27e46e8e0d509edfe628d9f0224c0734740c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_ce5acd647a1bb6c5d09af8ba609a9796a7764ff6.jar" />
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_beb0c2a1b423e379e9e363bb25fdd9a459896992.jar" />
     </item>
     <item
         is-multidex="false"
@@ -282,66 +66,66 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_b69247004705e50f02c5b7a0b8ff82ddf6b1d43e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.android/build-cache/b9f710b2c45327974fd8fc146a9d0b2fed120ad5/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_ce5acd647a1bb6c5d09af8ba609a9796a7764ff6.jar" />
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_41cbe6a7d2e631a921d156127dc1f0d4d46864ea.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/Auth0Sample/react-native-navigation/unspecified/jars/classes.jar"
+        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="a1ee08e5de35079c2d5542633552d5aee66f5b3c">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/Auth0Sample-react-native-navigation-unspecified_0176f67883ee868c3f8dff130516265e98f8e556.jar" />
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_cf48d3fba5d45519e62f192aa5907ca218d87ec3.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.47.2/jars/libs/infer-annotations-4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_b36ccf8e1306a8f13b3b633533630b4715ff473d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.47.2/jars/classes.jar"
+        jar="/Users/dpatel/.android/build-cache/d9ffdb2acbc0d9950544eb2d7302cceb561925f0/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="576b5113887747a7592650ae14d980e1c57983c4">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.47.2_c1613bed502c1f238b8af59a2a9c16e15209da3a.jar" />
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_10dcbdf85e1309dbe8a60a44a76b74e7db83441b.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_674f6bdd4c7ef195c9035dc6f8e64999fb613baa.jar" />
+        revision="25.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_b69247004705e50f02c5b7a0b8ff82ddf6b1d43e.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jar="/Users/dpatel/.android/build-cache/1cea3c26eb70e339123b314cfdb149606d0a6f3a/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_27cb27e46e8e0d509edfe628d9f0224c0734740c.jar" />
+        revision="25.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_c269b65fbab8f048e2bba0fd8c96f93dc8eebcf5.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.47.2/jars/classes.jar"
+        jar="/Users/dpatel/.android/build-cache/56e16567e9c72c48e15a571c326d4de4a855a1f9/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="576b5113887747a7592650ae14d980e1c57983c4">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.47.2_c1613bed502c1f238b8af59a2a9c16e15209da3a.jar" />
+        revision="25.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_5c6c0348f7787e5c6d0b7027b7e3fc204635437b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -354,48 +138,39 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jar="/Users/dpatel/.android/build-cache/4bd4e0cbddec45b8208f8e2d538556d4b5d9a5d2/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_993f5dce68913e0734353ca7b48cd37626efb0cb.jar" />
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_0f59451f5866797fad065c3ae50234f79e296082.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.47.2/jars/libs/infer-annotations-4.0.jar"
+        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_b36ccf8e1306a8f13b3b633533630b4715ff473d.jar" />
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_cf48d3fba5d45519e62f192aa5907ca218d87ec3.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.aurelhubert/ahbottomnavigation/2.0.6/jars/classes.jar"
+        jar="/Users/dpatel/.android/build-cache/dbd1b8d657c880ff677993d63eed70a5390f5d35/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="c8ba41bea7f78f8bdf3a803b9d08eb3fff416706">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.aurelhubert-ahbottomnavigation-2.0.6_a826569db2dc41d1d17753bc2beaaf675707608f.jar" />
+        sha1="576b5113887747a7592650ae14d980e1c57983c4">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_4b241f40796bd50cbdd1200d245fc051d408ad14.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu/1.5.4/jars/classes.jar"
+        jar="/Users/dpatel/.android/build-cache/d2b923840568941ed3ff0c80309bafc58eb4342c/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="1f6ff1728c297524e82b875ce2dfda946f4bca41">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.balysv.materialmenu-material-menu-1.5.4_599ba69aa8caf4dbeede0cc57590b766bcd14df3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.3.1_2ec52ea4f28cc6cb6710cf66ecf3abad29aa4375.jar" />
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_7baf7553268670767676cae4ad9f351ef0858221.jar" />
     </item>
     <item
         is-multidex="false"
@@ -408,84 +183,183 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/jars/classes.jar"
+        jar="/Users/dpatel/.android/build-cache/e6eb66f6c8e72f536ecf4e1c15cc13ae7336d86d/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.3.1_c3f967dd7066bdfb0bdc007c653fa19384114092.jar" />
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_107b70d785f6e020f0fda6be624a266c69638a44.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/jars/classes.jar"
+        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_4fc6f001c8cfc6b8fa480ff628ba2d48578cbdb3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.android/build-cache/671a219b6ea5eafc60efce0ab7114908715f4ce0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_a4496116916ec7636a0c7a31239b40ed7f7bd1e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.android/build-cache/b0c65ae4e0a4e3a5d3c4a93ea10e197b22992350/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e4a9d42c6d45eed4fd52f28dee859884131eae4c">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_45c9866e1bf2b60e980bb07c45d8787358e6cd3e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.android/build-cache/27c48a5b4298beb9c1e81720de3df346530cded0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_38c9758ea933b3cc9cefd9e1c22838c62af622f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.android/build-cache/3c926c74ac24becd93db66da7d0ea8c2c04b6130/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_41868673a1b63e51bc5f033736b9df23ff2a724e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.android/build-cache/90386d367ce408bc1c6fc5c6cdbee1e2f5a33416/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_20077a594204176a30949f6412fd1c9ac47b1f60.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_6819eff0635eb157e4b2aa4d7c1894f9f64375f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.android/build-cache/2314b79568dec8abfc850f32374dfdb710fa15ec/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_06e8ad59503e082df6f93d9eb6907695e8ac681e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/Documents/mystro/node_modules/react-native-auth0/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="eca81da9c3c6fc6e5dc7778cda2579d659c36f3b">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_e56bda20e4759d8f696207dcb5f6fc9acbb847b1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.android/build-cache/8727cae62879afea17f652cb9f13bd3215ad1143/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="95519720620b553f63afc789beba9ad582807f7c">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.3.1_7a358de38b500c1bec3f75e8f9c14456da09e88a.jar" />
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_b2e37c574dcf63acaf699a18d9f844c6d51f1115.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/Auth0Sample/react-native-auth0/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="518d34d9c79c480b2d108c46235f4683630acd06">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/Auth0Sample-react-native-auth0-unspecified_919ab8f90c7d9d4de12ed66a6e1c89b4031bbb28.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_6819eff0635eb157e4b2aa4d7c1894f9f64375f3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_f40b12a8c57385461fc7bfc4adf4ba8beb3d7ff4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_993f5dce68913e0734353ca7b48cd37626efb0cb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.3.1_7c7689bb3f0b96376b37cdfe36251ae6b39684b0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jar="/Users/dpatel/.android/build-cache/87ea9956fc5a2d34226d44033717dc8c01119091/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.1_d58e142db77c1e034b1377948e9a08580e0c757c.jar" />
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_29d41df975f601f3f14fe47cc7d1e2c856524fcc.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_6ebba981e1940a2e1e2ec8d2b4ab5aec8c8e8c11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.android/build-cache/2a68423ac30cd21be04936a102f70d57df1158a5/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_f40b12a8c57385461fc7bfc4adf4ba8beb3d7ff4.jar" />
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_b1397d78d5291f3aa42fa2bebe02174133344310.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.android/build-cache/255656f401e31b29607c349197384962d4ff20b1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_b35179e1e96a9d69877198e16ead533eb5f04f36.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.android/build-cache/d4dbad1c012de94b782b784ecdfb01e8d3548e01/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_913c80edb39a58b897868d5358ad13aeecbbf8ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.android/build-cache/dbd1b8d657c880ff677993d63eed70a5390f5d35/output/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_ae7001f291424e2cb608634dee2e5eda2ce3c001.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_4fc6f001c8cfc6b8fa480ff628ba2d48578cbdb3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.android/build-cache/49a9acf247a2a1b1bdc0cca433ad9a590edf8986/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_0b7ac47f502f9515d230cd7262e0a3ddd1ffc933.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.android/build-cache/fc97275c4e8e5eb77726332a7a72f6fa8e411b40/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c8ba41bea7f78f8bdf3a803b9d08eb3fff416706">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_627fa408d81d95359548d61b51407c5cbd1c0041.jar" />
     </item>
     <item
         is-multidex="false"
@@ -498,12 +372,30 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jar="/Users/dpatel/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
-        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.3.1_8a690b1728a50c053e08335ee4ed5f0e93b9f6d4.jar" />
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_0351bdd1bd728a920c88351ca17a7a998021fb04.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.android/build-cache/d9663c2e1dad40968eac34a37f4e1521785e2f79/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_0f58b4e6174572679b975a88c89a03c28ec217bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dpatel/.android/build-cache/a83e4062a379b1cac24805e9311243f6a7981495/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/dpatel/Documents/mystro/android/app/build/intermediates/pre-dexed/debug/classes_cc9399e157b9b85b2cb0319c55be04b444ffb17f.jar" />
     </item>
 
 </items>

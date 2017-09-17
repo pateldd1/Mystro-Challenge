@@ -1,10 +1,10 @@
 [
     {
         "merged": "/Users/dpatel/Documents/mystro/android/app/build/intermediates/res/merged/debug/menu/search_item.xml",
-        "source": "/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/Auth0Sample/react-native-navigation/unspecified/res/menu/search_item.xml"
+        "source": "/Users/dpatel/Documents/mystro/node_modules/react-native-navigation/android/app/build/intermediates/bundles/default/res/menu/search_item.xml"
     },
     {
         "merged": "/Users/dpatel/Documents/mystro/android/app/build/intermediates/res/merged/debug/menu/stub.xml",
-        "source": "/Users/dpatel/Documents/mystro/android/app/build/intermediates/exploded-aar/Auth0Sample/react-native-navigation/unspecified/res/menu/stub.xml"
+        "source": "/Users/dpatel/Documents/mystro/node_modules/react-native-navigation/android/app/build/intermediates/bundles/default/res/menu/stub.xml"
     }
 ]

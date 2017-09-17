@@ -1,4 +1,4 @@
-#Sun Sep 17 01:38:25 PDT 2017
+#Sun Sep 17 15:31:22 PDT 2017
 base.0=/Users/dpatel/Documents/mystro/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/Users/dpatel/Documents/mystro/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

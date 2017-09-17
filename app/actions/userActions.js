@@ -8,7 +8,11 @@ let credentials = require('../auth0-credentials');
 const auth0 = new Auth0(credentials);
 
 exports.loginUser = () => {
+  console.log("hi");
+  console.log(auth0);
+  console.log(credentials);
   return function(dispatch){
+    // dispatch(receivedUser("1","1","1"));
     auth0.webAuth
       .authorize({
         scope: 'openid profile',
@@ -16,6 +20,7 @@ exports.loginUser = () => {
       })
       .then((creds) => {
         // { accessToken, idToken } = creds;
+        console.log(creds);
         auth0.auth
           .userInfo({token: creds.accessToken})
           .then(info => {

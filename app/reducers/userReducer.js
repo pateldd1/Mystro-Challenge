@@ -29,9 +29,8 @@ module.exports = (state=defaultState, action) => {
   Object.freeze(state);
   switch(action.type) {
     case RECEIVED_USER:
-      let uservals = {user_id: action.user_id,
-                  accessToken: action.accessToken,
-                      idToken: action.idToken }
+      let uservals = {user_id: action.user_id, accessToken: action.accessToken, idToken: action.idToken };
+      console.log(uservals);
       return Object.assign({}, state, uservals);
     case UNAUTH_USER:
       return Object.assign({}, state, defaultState);
