@@ -1,6 +1,7 @@
 import { merge } from 'lodash';
 RECEIVED_USER = 'RECEIVED_USER';
 UNAUTH_USER = 'UNAUTH_USER';
+RECEIVED_PREFERENCES = 'RECEIVED_PREFERENCES';
 
 //This is our default state of the user.
 //Because of this, our User will have a default of all of this.
@@ -13,7 +14,14 @@ UNAUTH_USER = 'UNAUTH_USER';
 let defaultState = {
   user_id: undefined,
   accessToken: undefined,
-  idToken: undefined
+  idToken: undefined,
+  preferences: {
+    distance: undefined,
+    passengerRating: undefined,
+    application: undefined,
+    otherOnLine: undefined,
+    carPool: undefined
+  }
 };
 
 //We have to use Object.assign for a shallow merging and merge for a deep merging which would also merge the inner arrays of the object.
@@ -21,9 +29,14 @@ module.exports = (state=defaultState, action) => {
   Object.freeze(state);
   switch(action.type) {
     case RECEIVED_USER:
-      return Object.assign({}, state, action);
+      let uservals = {user_id: action.user_id,
+                  accessToken: action.accessToken,
+                      idToken: action.idToken }
+      return Object.assign({}, state, uservals);
     case UNAUTH_USER:
       return Object.assign({}, state, defaultState);
+    case RECEIVED_PREFERENCES:
+      return merge({}, state, { preferences: action.data })
     default:
       return state;
   }

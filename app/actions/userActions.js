@@ -2,6 +2,7 @@ import Auth0 from 'react-native-auth0';
 
 RECEIVED_USER = 'RECEIVED_USER';
 UNAUTH_USER = 'UNAUTH_USER';
+RECEIVED_PREFERENCES = 'RECEIVED_PREFERENCES';
 
 let credentials = require('../auth0-credentials');
 const auth0 = new Auth0(credentials);
@@ -35,6 +36,33 @@ exports.logoutUser = () => {
   }
 }
 
+exports.requestPreferences = (idToken, user_id) => {
+  return function(dispatch) {
+    auth0.users(idToken)
+      .getUser({ id: user_id })
+      .then((info) => {
+        let { preferences } = info.userMetadata;
+        dispatch(receivedPreferences(preferences));
+      })
+      .catch(e => console.log(e));
+  }
+}
+
+//a prefs object is going to be sent in to change preferences of the user.
+//It will come after the user is done making his preferences.
+//It will be the same format as the preferences that come back from auth0
+
+exports.updatePreferences = (idToken, user_id, prefs) => {
+  return function(dispatch) {
+    auth0.users(idToken)
+      .patchUser({ id: user_id, preferences: prefs })
+      .then(() => {
+        dispatch(receivedPreferences(prefs));
+      })
+      .catch(e => console.log(e));
+  }
+}
+
 exports.altLogoutUser = () => {
   return function(dispatch) {
     dispatch(unauthUser());
@@ -53,5 +81,12 @@ let receivedUser = (accessToken, idToken, user_id) => {
 let unauthUser = () => {
   return {
     type: UNAUTH_USER
+  }
+}
+
+let receivedPreferences = (data) => {
+  return {
+    type: RECEIVED_PREFERENCES,
+    data
   }
 }

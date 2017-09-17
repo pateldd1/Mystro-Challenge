@@ -42,9 +42,11 @@ export default class App extends Component {
     }
   }
 
-
   render() {
     let loggedIn = this.props.accessToken ? true : false;
+    // let preferences = () => {
+    //
+    // }
     return (
       <View style={styles.container}>
         <Text style={styles.header}>Mystro - Login</Text>
@@ -109,7 +111,6 @@ module.exports = connect(mapStateToProps, mapDispatchToProps)(App);
       // auth0.auth
       //   .userInfo({token: credentials.accessToken})
       //   .then(info => {
-          // let user_id = info.sub.match(/auth0\|(.+)/)[1];
           // auth0.users(credentials.idToken)
           //   .patchUser({id: info.sub, metadata: {"hello": "joe"}})
           //   .then(x => console.log(x))
