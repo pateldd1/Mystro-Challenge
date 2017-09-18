@@ -83,6 +83,15 @@ class Home extends Component {
     }
   }
 
+  displayPreferences(){
+    Object.keys(this.props.preferences).map((pref)=>{
+      <View>
+        <Text>
+        </Text>
+      </View>
+    })
+  }
+
   render() {
     let loggedIn = this.props.accessToken ? true : false;
     console.log("Logged");
