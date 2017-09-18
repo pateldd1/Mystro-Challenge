@@ -100,19 +100,20 @@ class Home extends Component {
       case "otherOnLine":
         return `Other application will come online ${val}`;
       case "carPool":
-        return `You ${val === 'yes' ? 'do' : 'dont'} want rides from carpool services`;
+        return `${val === 'yes' ? 'Does' : 'Doesnt'} want rides from carpool services`;
     }
   }
   displayPreferences(){
     let display = Object.keys(this.props.preferences).map((pref, idx)=>{
       return (
-        <View key={idx}>
-          <Text>{this.parseResult(pref, this.props.preferences[pref])}</Text>
+        <View style={styles.prefs} key={idx}>
+          <Text style={styles.pref}>{this.parseResult(pref, this.props.preferences[pref])}</Text>
         </View>
       )
     })
     return (
-      <View>
+      <View style={styles.prefContainer}>
+        <Text style={styles.prefText}>Preferences:</Text>
         {display}
       </View>
     )
@@ -128,11 +129,8 @@ class Home extends Component {
     console.log(disp);
     return (
       <View style={styles.container}>
-        <Text style={styles.header}>Mystro - Login</Text>
+        <Text style={styles.header}>Mystro</Text>
         {disp}
-        <Text>
-          You are {loggedIn ? '' : 'not '}logged in.
-        </Text>
         <Button
           onPress={loggedIn ? this._onLogout : this._onLogin}
           title={loggedIn ? 'Log Out' : 'Log In'}
@@ -150,10 +148,29 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF'
   },
   header: {
-    fontSize: 20,
+    fontSize: 30,
     textAlign: 'center',
     margin: 10
-  }
+  },
+  prefContainer: {
+    marginBottom: 35
+  },
+  prefText: {
+    fontSize: 18,
+    marginLeft: 16
+  },
+  pref: {
+    fontSize: 15
+  },
+  prefs: {
+      paddingLeft: 15,
+      paddingTop: 15,
+      borderBottomWidth: 1,
+      borderColor: '#d3d3d3',
+      backgroundColor: 'white',
+      width: 345,
+      marginLeft: 15
+    },
 });
 
 let mapStateToProps = (state) => {

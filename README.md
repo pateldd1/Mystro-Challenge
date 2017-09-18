@@ -1,5 +1,3 @@
-# Auth0 React Native Samples - Login
+# Mystro Coding Challenge
 
-For more information:
-
-- [Login QuickStart](https://auth0.com/docs/quickstart/native/react-native/00-login)
+![demo1](/app/images/demo.gif)
