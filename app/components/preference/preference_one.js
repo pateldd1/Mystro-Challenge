@@ -76,7 +76,7 @@ class PreferenceOne extends React.Component {
           <Text style={this.state.passengerRating === "Any" ? styles.selections : styles.nonselections} onPress={()=> this.updatePassengerRating("Any")}>Any</Text>
         </View>
         <Button
-          onPress={this.checkState() ? this.navNextPreference.bind(this) : null}
+          onPress={this.checkState() ? this.navNextPreference.bind(this) : ()=> null}
           title={"Next Page"}
         />
       </View>

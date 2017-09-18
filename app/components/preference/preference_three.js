@@ -51,11 +51,11 @@ class PreferenceThree extends React.Component {
       <View>
         <View>
           <Text>Do you want rides from carpool services?</Text>
-          <Text onPress={()=> this.updateCarPool("Yes")}>Yes</Text>
-          <Text onPress={()=> this.updateCarPool("No")}>No</Text>
+          <Text style={this.state.carPool === "Yes" ? styles.selections : styles.nonselections} onPress={()=> this.updateCarPool("Yes")}>Yes</Text>
+          <Text style={this.state.carPool === "No" ? styles.selections : styles.nonselections} onPress={()=> this.updateCarPool("No")}>No</Text>
         </View>
         <Button
-          onPress={this.checkState() ? this.submit.bind(this) : null}
+          onPress={this.checkState() ? this.submit.bind(this) : ()=> null}
           title={"Submit"}
         />
       </View>
@@ -63,5 +63,24 @@ class PreferenceThree extends React.Component {
   }
 }
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF'
+  },
+  header: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10
+  },
+  selections: {
+    color: 'green'
+  },
+  nonselections: {
+    color: 'black'
+  }
+});
 
 module.exports = PreferenceThree;

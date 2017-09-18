@@ -62,18 +62,18 @@ class PreferenceTwo extends React.Component {
       <View>
         <View>
           <Text>What app should always be active?</Text>
-          <Text onPress={()=> this.updateApplication("Uber")}>Uber</Text>
-          <Text onPress={()=> this.updateApplication("Lyft")}>Lyft</Text>
+          <Text style={this.state.application === "Uber" ? styles.selections : styles.nonselections} onPress={()=> this.updateApplication("Uber")}>Uber</Text>
+          <Text style={this.state.application === "Lyft" ? styles.selections : styles.nonselections} onPress={()=> this.updateApplication("Lyft")}>Lyft</Text>
         </View>
         <View>
           <Text>And when should the other come on-line?</Text>
-          <Text onPress={()=> this.updateOtherOnline("Always")}>Always</Text>
-          <Text onPress={()=> this.updateOtherOnline("If no ride for 5 minutes")}>If no ride for 5 minutes</Text>
-          <Text onPress={()=> this.updateOtherOnline("If no ride for 10 minutes")}>If no ride for 10 minutes</Text>
-          <Text onPress={()=> this.updateOtherOnline("If no ride for 15 minutes")}>If no ride for 15 minutes</Text>
+          <Text style={this.state.otherOnLine === "Always" ? styles.selections : styles.nonselections } onPress={()=> this.updateOtherOnline("Always")}>Always</Text>
+          <Text style={this.state.otherOnLine === "If no ride for 5 minutes" ? styles.selections : styles.nonselections } onPress={()=> this.updateOtherOnline("If no ride for 5 minutes")}>If no ride for 5 minutes</Text>
+          <Text style={this.state.otherOnLine === "If no ride for 10 minutes" ? styles.selections : styles.nonselections } onPress={()=> this.updateOtherOnline("If no ride for 10 minutes")}>If no ride for 10 minutes</Text>
+          <Text style={this.state.otherOnLine === "If no ride for 15 minutes" ? styles.selections : styles.nonselections } onPress={()=> this.updateOtherOnline("If no ride for 15 minutes")}>If no ride for 15 minutes</Text>
         </View>
         <Button
-          onPress={this.checkState() ? this.navNextPreference.bind(this) : null}
+          onPress={this.checkState() ? this.navNextPreference.bind(this) : ()=>null}
           title={"Next Page"}
         />
       </View>
@@ -81,5 +81,24 @@ class PreferenceTwo extends React.Component {
   }
 }
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF'
+  },
+  header: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10
+  },
+  selections: {
+    color: 'green'
+  },
+  nonselections: {
+    color: 'black'
+  }
+});
 
 module.exports = PreferenceTwo;

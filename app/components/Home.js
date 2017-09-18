@@ -36,6 +36,10 @@ class Home extends Component {
   componentDidUpdate(prevProps, prevState){
     console.log("updated");
     console.log(prevProps, this.props, prevState, this.state);
+    if ( !this.props.accessToken )
+    {
+      return;
+    }
     if (prevProps.accessToken !== this.props.accessToken)
     {
       console.log("i'm in");
@@ -85,9 +89,9 @@ class Home extends Component {
   }
 
   displayPreferences(){
-    let display = Object.keys(this.props.preferences).map((pref)=>{
+    let display = Object.keys(this.props.preferences).map((pref, idx)=>{
       return (
-        <View>
+        <View key={idx}>
           <Text>{pref} {this.props.preferences[pref]}</Text>
         </View>
       )
