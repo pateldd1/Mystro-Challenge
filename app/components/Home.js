@@ -22,6 +22,7 @@ class Home extends Component {
     this._onLogin = this._onLogin.bind(this);
     this._onLogout = this._onLogout.bind(this);
     this.navigation = this.navigation.bind(this);
+    this.displayPreferences = this.displayPreferences.bind(this);
     // this.state = { accessToken: null };
   }
 
@@ -65,7 +66,7 @@ class Home extends Component {
       title: 'Preferences 1',
       animated: true,
       animationType: 'fade',
-      backButtonHidden: true
+      backButtonHidden: true,
     });
   }
 
@@ -84,20 +85,32 @@ class Home extends Component {
   }
 
   displayPreferences(){
-    Object.keys(this.props.preferences).map((pref)=>{
-      <View>
-        <Text>
-        </Text>
-      </View>
+    let display = Object.keys(this.props.preferences).map((pref)=>{
+      return (
+        <View>
+          <Text>{pref} {this.props.preferences[pref]}</Text>
+        </View>
+      )
     })
+    return (
+      <View>
+        {display}
+      </View>
+    )
   }
 
   render() {
     let loggedIn = this.props.accessToken ? true : false;
-    console.log("Logged");
+    let disp;
+    if ( loggedIn )
+    {
+      disp = this.displayPreferences();
+    }
+    console.log(disp);
     return (
       <View style={styles.container}>
         <Text style={styles.header}>Mystro - Login</Text>
+        {disp}
         <Text>
           You are {loggedIn ? '' : 'not '}logged in.
         </Text>

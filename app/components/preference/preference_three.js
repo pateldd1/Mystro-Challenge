@@ -6,7 +6,8 @@ import {
     StyleSheet,
     TouchableOpacity,
     Image,
-    Dimensions
+    Dimensions,
+    Button
   } from 'react-native';
 
 class PreferenceThree extends React.Component {
@@ -17,7 +18,6 @@ class PreferenceThree extends React.Component {
     }
     this.updateCarPool = this.updateCarPool.bind(this);
     this.checkState = this.checkState.bind(this);
-    this.submit = this.submit.bind(this);
   }
 
   updateCarPool(val){
@@ -25,7 +25,7 @@ class PreferenceThree extends React.Component {
   }
 
   checkState(){
-    this.state["carPool"] === "" ? false : true
+    return this.state["carPool"] === "" ? false : true
   }
   //Do this later to light up the preferences with CSS that are already selected
   // componentDidMount() {
@@ -33,8 +33,8 @@ class PreferenceThree extends React.Component {
   // }
 
   submit() {
-    { idToken, user_id } = this.props;
-    let prefs = Object.assign(this.props, this.state);
+    let { idToken, user_id } = this.props;
+    let prefs = Object.assign({}, this.props.prefs, this.state);
     this.props.updatePreferences(idToken, user_id, prefs);
     this.props.navigator.push({
       screen: 'Home',
@@ -51,11 +51,11 @@ class PreferenceThree extends React.Component {
       <View>
         <View>
           <Text>Do you want rides from carpool services?</Text>
-          <Text onPress={()=> updateCarPool("Yes")}>Yes</Text>
-          <Text onPress={()=> updateCarPool("No")}>No</Text>
+          <Text onPress={()=> this.updateCarPool("Yes")}>Yes</Text>
+          <Text onPress={()=> this.updateCarPool("No")}>No</Text>
         </View>
         <Button
-          onPress={this.checkState() ? submit : null}
+          onPress={this.checkState() ? this.submit.bind(this) : null}
           title={"Submit"}
         />
       </View>

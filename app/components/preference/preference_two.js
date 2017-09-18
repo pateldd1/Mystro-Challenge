@@ -6,7 +6,8 @@ import {
     StyleSheet,
     TouchableOpacity,
     Image,
-    Dimensions
+    Dimensions,
+    Button
   } from 'react-native';
 
 class PreferenceTwo extends React.Component {
@@ -19,14 +20,13 @@ class PreferenceTwo extends React.Component {
     this.updateApplication = this.updateApplication.bind(this);
     this.updateOtherOnline = this.updateOtherOnline.bind(this);
     this.checkState = this.checkState.bind(this);
-    this.navNextPreference = this.navNextPreference.bind(this);
   }
 
-  updateDistance(val){
+  updateApplication(val){
     this.setState({"application": val});
   }
 
-  updatePassengerRating(val){
+  updateOtherOnline(val){
     this.setState({"otherOnLine": val});
   }
 
@@ -52,7 +52,7 @@ class PreferenceTwo extends React.Component {
       title: 'Preferences 3',
       animated: true,
       animationType: 'fade',
-      passProps: Object.assign(this.props, this.state)
+      passProps: {prefs: Object.assign({}, this.props.prefs, this.state), user_id: this.props.user_id, idToken: this.props.idToken, updatePreferences: this.props.updatePreferences}
     });
   }
 
@@ -62,18 +62,18 @@ class PreferenceTwo extends React.Component {
       <View>
         <View>
           <Text>What app should always be active?</Text>
-          <Text onPress={()=> updateApplication("Uber")}>Uber</Text>
-          <Text onPress={()=> updateApplication("Lyft")}>Lyft</Text>
+          <Text onPress={()=> this.updateApplication("Uber")}>Uber</Text>
+          <Text onPress={()=> this.updateApplication("Lyft")}>Lyft</Text>
         </View>
         <View>
           <Text>And when should the other come on-line?</Text>
-          <Text onPress={()=> updateOtherOnline("Always")}>Always</Text>
-          <Text onPress={()=> updateOtherOnline("If no ride for 5 minutes")}>If no ride for 5 minutes</Text>
-          <Text onPress={()=> updateOtherOnline("If no ride for 10 minutes")}>If no ride for 10 minutes</Text>
-          <Text onPress={()=> updateOtherOnline("If no ride for 15 minutes")}>If no ride for 15 minutes</Text>
+          <Text onPress={()=> this.updateOtherOnline("Always")}>Always</Text>
+          <Text onPress={()=> this.updateOtherOnline("If no ride for 5 minutes")}>If no ride for 5 minutes</Text>
+          <Text onPress={()=> this.updateOtherOnline("If no ride for 10 minutes")}>If no ride for 10 minutes</Text>
+          <Text onPress={()=> this.updateOtherOnline("If no ride for 15 minutes")}>If no ride for 15 minutes</Text>
         </View>
         <Button
-          onPress={this.checkState() ? navNextPreference : null}
+          onPress={this.checkState() ? this.navNextPreference.bind(this) : null}
           title={"Next Page"}
         />
       </View>

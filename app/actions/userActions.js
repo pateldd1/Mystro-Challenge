@@ -8,9 +8,6 @@ let credentials = require('../auth0-credentials');
 const auth0 = new Auth0(credentials);
 
 exports.loginUser = () => {
-  console.log("hi");
-  console.log(auth0);
-  console.log(credentials);
   return function(dispatch){
     // dispatch(receivedUser("1","1","1"));
     auth0.webAuth
@@ -62,10 +59,13 @@ exports.requestPreferences = (idToken, user_id) => {
 //It will be the same format as the preferences that come back from auth0
 
 exports.updatePreferences = (idToken, user_id, prefs) => {
+  console.log("i got called");
   return function(dispatch) {
+    console.log("I'm outside of auth0.useridtoken");
     auth0.users(idToken)
-      .patchUser({ id: user_id, preferences: prefs })
+      .patchUser({ id: user_id, metadata: {preferences: prefs} })
       .then(() => {
+        console.log(prefs, "I am within update");
         dispatch(receivedPreferences(prefs));
       })
       .catch(e => console.log(e));
