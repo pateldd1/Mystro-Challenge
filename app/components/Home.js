@@ -4,7 +4,8 @@
  * @flow
  */
 import {connect} from 'react-redux';
-import { loginUser, logoutUser, altLogoutUser, requestPreferences, updatePreferences } from '../actions/userActions';
+import { loginUser, logoutUser, altLogoutUser,
+        requestPreferences, updatePreferences } from '../actions/userActions';
 import React, { Component } from 'react';
 import {
   Alert,
@@ -23,6 +24,7 @@ class Home extends Component {
     this._onLogout = this._onLogout.bind(this);
     this.navigation = this.navigation.bind(this);
     this.displayPreferences = this.displayPreferences.bind(this);
+    this.parseResult = this.parseResult.bind(this);
     // this.state = { accessToken: null };
   }
 
@@ -87,12 +89,25 @@ class Home extends Component {
       this.props.logoutUser();
     }
   }
-
+  parseResult(key, val){
+    switch(key){
+      case "distance":
+        return `Willing to Drive ${val} minutes`;
+      case "passengerRating":
+        return `Willing to pick up passengers with > ${val} rating`;
+      case "application":
+        return `${val} will always be active`;
+      case "otherOnLine":
+        return `Other application will come online ${val}`;
+      case "carPool":
+        return `You ${val === 'yes' ? 'do' : 'dont'} want rides from carpool services`;
+    }
+  }
   displayPreferences(){
     let display = Object.keys(this.props.preferences).map((pref, idx)=>{
       return (
         <View key={idx}>
-          <Text>{pref} {this.props.preferences[pref]}</Text>
+          <Text>{this.parseResult(pref, this.props.preferences[pref])}</Text>
         </View>
       )
     })

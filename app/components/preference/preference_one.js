@@ -63,19 +63,28 @@ class PreferenceOne extends React.Component {
       <View>
         <View>
           <Text>How far will you drive for a pickup?</Text>
-          <Text style={this.state.distance === "5" ? styles.selections : styles.nonselections} onPress={()=> this.updateDistance("5")}>5 min</Text>
-          <Text style={this.state.distance === "10" ? styles.selections : styles.nonselections} onPress={()=> this.updateDistance("10")}>10 min</Text>
-          <Text style={this.state.distance === "20" ? styles.selections : styles.nonselections} onPress={()=> this.updateDistance("20")}>20 min</Text>
-          <Text style={this.state.distance === "Any" ? styles.selections : styles.nonselections} onPress={()=> this.updateDistance("Any")}>Any</Text>
+          <Text style={this.state.distance === "5" ? styles.selections : styles.nonselections}
+            onPress={()=> this.updateDistance("5")}>5 min</Text>
+          <Text style={this.state.distance === "10" ? styles.selections : styles.nonselections}
+            onPress={()=> this.updateDistance("10")}>10 min</Text>
+          <Text style={this.state.distance === "20" ? styles.selections : styles.nonselections}
+            onPress={()=> this.updateDistance("20")}>20 min</Text>
+          <Text style={this.state.distance === "Any" ? styles.selections : styles.nonselections}
+            onPress={()=> this.updateDistance("Any")}>Any</Text>
         </View>
         <View>
           <Text>How far will you drive for a pickup?</Text>
-          <Text style={this.state.passengerRating === "4.5" ? styles.selections : styles.nonselections} onPress={()=> this.updatePassengerRating("4.5")}>4.5</Text>
-          <Text style={this.state.passengerRating === "4" ? styles.selections : styles.nonselections} onPress={()=> this.updatePassengerRating("4")}>4</Text>
-          <Text style={this.state.passengerRating === "3.5" ? styles.selections : styles.nonselections} onPress={()=> this.updatePassengerRating("3.5")}>3.5</Text>
-          <Text style={this.state.passengerRating === "Any" ? styles.selections : styles.nonselections} onPress={()=> this.updatePassengerRating("Any")}>Any</Text>
+          <Text style={this.state.passengerRating === "4.5" ? styles.selections : styles.nonselections}
+            onPress={()=> this.updatePassengerRating("4.5")}>4.5</Text>
+          <Text style={this.state.passengerRating === "4" ? styles.selections : styles.nonselections}
+            onPress={()=> this.updatePassengerRating("4")}>4</Text>
+          <Text style={this.state.passengerRating === "3.5" ? styles.selections : styles.nonselections}
+            onPress={()=> this.updatePassengerRating("3.5")}>3.5</Text>
+          <Text style={this.state.passengerRating === "Any" ? styles.selections : styles.nonselections}
+            onPress={()=> this.updatePassengerRating("Any")}>Any</Text>
         </View>
         <Button
+          style={styles.nextbutton}
           onPress={this.checkState() ? this.navNextPreference.bind(this) : ()=> null}
           title={"Next Page"}
         />
@@ -97,10 +106,15 @@ const styles = StyleSheet.create({
     margin: 10
   },
   selections: {
-    color: 'green'
+    color: 'green',
+    fontSize: 20
   },
   nonselections: {
-    color: 'black'
+    color: 'black',
+    fontSize: 20
+  },
+  nextbutton: {
+    top: 400
   }
 });
 

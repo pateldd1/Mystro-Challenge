@@ -36,12 +36,12 @@ class PreferenceThree extends React.Component {
     let { idToken, user_id } = this.props;
     let prefs = Object.assign({}, this.props.prefs, this.state);
     this.props.updatePreferences(idToken, user_id, prefs);
-    this.props.navigator.push({
-      screen: 'Home',
-      title: 'Home',
+    this.props.navigator.popToRoot({
       animated: true,
-      animationType: 'fade',
-      backButtonHidden: true
+      animationType: 'fade'
+    })
+    this.props.navigator.switchToTab({
+      tabIndex: 0
     });
   }
 
@@ -51,8 +51,10 @@ class PreferenceThree extends React.Component {
       <View>
         <View>
           <Text>Do you want rides from carpool services?</Text>
-          <Text style={this.state.carPool === "Yes" ? styles.selections : styles.nonselections} onPress={()=> this.updateCarPool("Yes")}>Yes</Text>
-          <Text style={this.state.carPool === "No" ? styles.selections : styles.nonselections} onPress={()=> this.updateCarPool("No")}>No</Text>
+          <Text style={this.state.carPool === "Yes" ? styles.selections : styles.nonselections}
+            onPress={()=> this.updateCarPool("Yes")}>Yes</Text>
+          <Text style={this.state.carPool === "No" ? styles.selections : styles.nonselections}
+            onPress={()=> this.updateCarPool("No")}>No</Text>
         </View>
         <Button
           onPress={this.checkState() ? this.submit.bind(this) : ()=> null}

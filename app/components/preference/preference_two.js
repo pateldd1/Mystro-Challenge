@@ -52,7 +52,10 @@ class PreferenceTwo extends React.Component {
       title: 'Preferences 3',
       animated: true,
       animationType: 'fade',
-      passProps: {prefs: Object.assign({}, this.props.prefs, this.state), user_id: this.props.user_id, idToken: this.props.idToken, updatePreferences: this.props.updatePreferences}
+      passProps: {prefs: Object.assign({}, this.props.prefs, this.state),
+                  user_id: this.props.user_id,
+                  idToken: this.props.idToken, 
+                  updatePreferences: this.props.updatePreferences}
     });
   }
 
@@ -62,15 +65,21 @@ class PreferenceTwo extends React.Component {
       <View>
         <View>
           <Text>What app should always be active?</Text>
-          <Text style={this.state.application === "Uber" ? styles.selections : styles.nonselections} onPress={()=> this.updateApplication("Uber")}>Uber</Text>
-          <Text style={this.state.application === "Lyft" ? styles.selections : styles.nonselections} onPress={()=> this.updateApplication("Lyft")}>Lyft</Text>
+          <Text style={this.state.application === "Uber" ? styles.selections : styles.nonselections}
+             onPress={()=> this.updateApplication("Uber")}>Uber</Text>
+          <Text style={this.state.application === "Lyft" ? styles.selections : styles.nonselections}
+             onPress={()=> this.updateApplication("Lyft")}>Lyft</Text>
         </View>
         <View>
           <Text>And when should the other come on-line?</Text>
-          <Text style={this.state.otherOnLine === "Always" ? styles.selections : styles.nonselections } onPress={()=> this.updateOtherOnline("Always")}>Always</Text>
-          <Text style={this.state.otherOnLine === "If no ride for 5 minutes" ? styles.selections : styles.nonselections } onPress={()=> this.updateOtherOnline("If no ride for 5 minutes")}>If no ride for 5 minutes</Text>
-          <Text style={this.state.otherOnLine === "If no ride for 10 minutes" ? styles.selections : styles.nonselections } onPress={()=> this.updateOtherOnline("If no ride for 10 minutes")}>If no ride for 10 minutes</Text>
-          <Text style={this.state.otherOnLine === "If no ride for 15 minutes" ? styles.selections : styles.nonselections } onPress={()=> this.updateOtherOnline("If no ride for 15 minutes")}>If no ride for 15 minutes</Text>
+          <Text style={this.state.otherOnLine === "Always" ? styles.selections : styles.nonselections }
+             onPress={()=> this.updateOtherOnline("Always")}>Always</Text>
+          <Text style={this.state.otherOnLine === "If no ride for 5 minutes" ? styles.selections : styles.nonselections }
+             onPress={()=> this.updateOtherOnline("If no ride for 5 minutes")}>If no ride for 5 minutes</Text>
+          <Text style={this.state.otherOnLine === "If no ride for 10 minutes" ? styles.selections : styles.nonselections }
+             onPress={()=> this.updateOtherOnline("If no ride for 10 minutes")}>If no ride for 10 minutes</Text>
+          <Text style={this.state.otherOnLine === "If no ride for 15 minutes" ? styles.selections : styles.nonselections }
+             onPress={()=> this.updateOtherOnline("If no ride for 15 minutes")}>If no ride for 15 minutes</Text>
         </View>
         <Button
           onPress={this.checkState() ? this.navNextPreference.bind(this) : ()=>null}

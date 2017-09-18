@@ -25,27 +25,16 @@ export default () => {
         label: 'Home',
         screen: 'Home',
         title: 'Home',
-        icon: require("./images/icon_home.png"),
-        selectedIcon: require("./images/icon_home.png")
+        icon: require("./images/house.png"),
+        selectedIcon: require("./images/house.png")
       },
       {
-        label: 'PreferenceOne',
+        label: 'Preferences',
         screen: 'PreferenceOne',
-        title: 'PreferenceOne',
-        icon: require("./images/icon_home.png"),
-        selectedIcon: require("./images/icon_home.png")
+        title: 'Preferences 1',
+        icon: require("./images/avatar.png"),
+        selectedIcon: require("./images/avatar.png")
       }
-      // {
-      //   label: 'PreferenceTwo',
-      //   screen: 'PreferenceTwo',
-      //   title: 'PreferenceTwo',
-      //
-      // },
-      // {
-      //   label: 'PreferenceThree',
-      //   screen: 'PreferenceThree',
-      //   title: 'PreferenceThree'
-      // }
     ]
   })
 }

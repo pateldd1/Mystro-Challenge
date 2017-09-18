@@ -9,14 +9,12 @@ const auth0 = new Auth0(credentials);
 
 exports.loginUser = () => {
   return function(dispatch){
-    // dispatch(receivedUser("1","1","1"));
     auth0.webAuth
       .authorize({
         scope: 'openid profile',
         audience: 'https://' + credentials.domain + '/userinfo'
       })
       .then((creds) => {
-        // { accessToken, idToken } = creds;
         console.log(creds);
         auth0.auth
           .userInfo({token: creds.accessToken})
