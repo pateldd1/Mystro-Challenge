@@ -36,19 +36,15 @@ class Home extends Component {
   }
 
   componentDidUpdate(prevProps, prevState){
-    console.log("updated");
-    console.log(prevProps, this.props, prevState, this.state);
     if ( !this.props.accessToken )
     {
       return;
     }
     if (prevProps.accessToken !== this.props.accessToken)
     {
-      console.log("i'm in");
       this.props.requestPreferences(this.props.idToken, this.props.user_id);
     }
     else if (this.props.accessToken){
-      console.log('im out');
       this.navigation();
     }
   }
@@ -60,7 +56,6 @@ class Home extends Component {
     let prefKeys = Object.keys(preferences)
     for (let i = 0; i < prefKeys.length; i++)
     {
-      console.log(prefKeys[i]);
       //Checking if any preferences are available in the preferences object
       if (preferences[prefKeys[i]]){
         return;
@@ -126,7 +121,6 @@ class Home extends Component {
     {
       disp = this.displayPreferences();
     }
-    console.log(disp);
     return (
       <View style={styles.container}>
         <Text style={styles.header}>Mystro</Text>

@@ -23,7 +23,6 @@ module.exports = (state=defaultState, action) => {
       let uservals = {user_id: action.user_id,
                   accessToken: action.accessToken,
                       idToken: action.idToken };
-      console.log(uservals);
       return Object.assign({}, state, uservals);
     case UNAUTH_USER:
       return Object.assign({}, state, {accessToken: null,
