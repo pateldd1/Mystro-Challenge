@@ -35,7 +35,14 @@ module.exports = (state=defaultState, action) => {
     case UNAUTH_USER:
       return Object.assign({}, state, defaultState);
     case RECEIVED_PREFERENCES:
-      return merge({}, state, { preferences: action.data })
+      console.log(action.data, "these are preferences");
+      if ( action.data )
+      {
+        return merge({}, state, { preferences: action.data });
+      }
+      else {
+        return merge({}, state, defaultState);
+      }
     default:
       return state;
   }

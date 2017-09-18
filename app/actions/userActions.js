@@ -46,7 +46,11 @@ exports.requestPreferences = (idToken, user_id) => {
     auth0.users(idToken)
       .getUser({ id: user_id })
       .then((info) => {
-        let { preferences } = info.userMetadata;
+        let preferences = undefined;
+        if ( info.userMetadata )
+        {
+          preferences = info.userMetadata.preferences;
+        }
         dispatch(receivedPreferences(preferences));
       })
       .catch(e => console.log(e));

@@ -4,7 +4,7 @@
  * @flow
  */
 import {connect} from 'react-redux';
-import { loginUser, logoutUser, altLogoutUser } from '../actions/userActions';
+import { loginUser, logoutUser, altLogoutUser, requestPreferences, updatePreferences } from '../actions/userActions';
 import React, { Component } from 'react';
 import {
   Alert,
@@ -16,12 +16,57 @@ import {
   View
 } from 'react-native';
 
-class App extends Component {
+class Home extends Component {
   constructor(props) {
     super(props);
     this._onLogin = this._onLogin.bind(this);
     this._onLogout = this._onLogout.bind(this);
+    this.navigation = this.navigation.bind(this);
     // this.state = { accessToken: null };
+  }
+
+  componentDidMount() {
+    if ( this.props.accessToken && this.props.user_id && this.props.idToken)
+    {
+      this.props.requestPreferences(this.props.idToken, this.props.user_id)
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState){
+    console.log("updated");
+    console.log(prevProps, this.props, prevState, this.state);
+    if (prevProps.accessToken !== this.props.accessToken)
+    {
+      console.log("i'm in");
+      this.props.requestPreferences(this.props.idToken, this.props.user_id);
+    }
+    else if (this.props.accessToken){
+      console.log('im out');
+      this.navigation();
+    }
+  }
+
+  //If there are no preferences, then go to preferences screens
+  //Else remain on this screen and see your preferences
+  navigation(){
+    let {preferences} = this.props;
+    let prefKeys = Object.keys(preferences)
+    for (let i = 0; i < prefKeys.length; i++)
+    {
+      console.log(prefKeys[i]);
+      //Checking if any preferences are available in the preferences object
+      if (preferences[prefKeys[i]]){
+        return;
+      }
+    }
+    //Pass Props of the User Id later to light up the preferences already selected - Extra
+    this.props.navigator.push({
+      screen: 'PreferenceOne',
+      title: 'Preferences 1',
+      animated: true,
+      animationType: 'fade',
+      backButtonHidden: true
+    });
   }
 
   _onLogin = () => {
@@ -40,10 +85,7 @@ class App extends Component {
 
   render() {
     let loggedIn = this.props.accessToken ? true : false;
-    // let preferences = () => {
-    //
-    // }
-    console.log("hihihildashf");
+    console.log("Logged");
     return (
       <View style={styles.container}>
         <Text style={styles.header}>Mystro - Login</Text>
@@ -77,18 +119,21 @@ let mapStateToProps = (state) => {
   return {
     user_id: state.user.user_id,
     accessToken: state.user.accessToken,
-    idToken: state.user.idToken
+    idToken: state.user.idToken,
+    preferences: state.user.preferences
   };
 };
 let mapDispatchToProps = (dispatch) => {
   return {
     loginUser: () => dispatch(loginUser()),
     logoutUser: () => dispatch(logoutUser()),
-    altLogoutUser: () => dispatch(altLogoutUser())
+    altLogoutUser: () => dispatch(altLogoutUser()),
+    requestPreferences: (idToken, user_id) => dispatch(requestPreferences(idToken, user_id)),
+    updatePreferences: (idToken, user_id, prefs) => dispatch(updatePreferences(idToken, user_id, prefs))
   };
 };
 
-module.exports = connect(mapStateToProps, mapDispatchToProps)(App);
+module.exports = connect(mapStateToProps, mapDispatchToProps)(Home);
 
 
 // REFER TO IF NEEDED
