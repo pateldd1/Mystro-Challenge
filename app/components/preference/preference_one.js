@@ -47,14 +47,23 @@ class PreferenceOne extends React.Component {
   //   this.props.requestPreferences()
   // }
 
+
   navNextPreference() {
-    this.props.navigator.push({
-      screen: 'PreferenceTwo',
-      title: 'Preferences 2',
-      animated: true,
-      animationType: 'fade',
-      passProps: {prefs: this.state, user_id: this.props.user_id, idToken: this.props.idToken, updatePreferences: this.props.updatePreferences}
-    });
+    if ( !this.props.user_id )
+    {
+      this.props.navigator.switchToTab({
+        tabIndex: 0
+      });
+    }
+    else {
+      this.props.navigator.push({
+        screen: 'PreferenceTwo',
+        title: 'Preferences 2',
+        animated: true,
+        animationType: 'fade',
+        passProps: {prefs: this.state, user_id: this.props.user_id, idToken: this.props.idToken, updatePreferences: this.props.updatePreferences}
+      });
+    }
   }
 
   render()

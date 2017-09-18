@@ -100,7 +100,7 @@ class Home extends Component {
       case "otherOnLine":
         return `Other application will come online ${val}`;
       case "carPool":
-        return `${val === 'yes' ? 'Does' : 'Doesnt'} want rides from carpool services`;
+        return `${val === 'Yes' ? 'Does' : 'Doesnt'} want rides from carpool services`;
     }
   }
   displayPreferences(){
