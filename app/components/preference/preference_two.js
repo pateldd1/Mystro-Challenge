@@ -54,7 +54,7 @@ class PreferenceTwo extends React.Component {
       animationType: 'fade',
       passProps: {prefs: Object.assign({}, this.props.prefs, this.state),
                   user_id: this.props.user_id,
-                  idToken: this.props.idToken, 
+                  idToken: this.props.idToken,
                   updatePreferences: this.props.updatePreferences}
     });
   }
@@ -62,26 +62,27 @@ class PreferenceTwo extends React.Component {
   render()
   {
     return (
-      <View>
-        <View>
-          <Text>What app should always be active?</Text>
-          <Text style={this.state.application === "Uber" ? styles.selections : styles.nonselections}
-             onPress={()=> this.updateApplication("Uber")}>Uber</Text>
-          <Text style={this.state.application === "Lyft" ? styles.selections : styles.nonselections}
-             onPress={()=> this.updateApplication("Lyft")}>Lyft</Text>
-        </View>
-        <View>
-          <Text>And when should the other come on-line?</Text>
-          <Text style={this.state.otherOnLine === "Always" ? styles.selections : styles.nonselections }
-             onPress={()=> this.updateOtherOnline("Always")}>Always</Text>
-          <Text style={this.state.otherOnLine === "If no ride for 5 minutes" ? styles.selections : styles.nonselections }
-             onPress={()=> this.updateOtherOnline("If no ride for 5 minutes")}>If no ride for 5 minutes</Text>
-          <Text style={this.state.otherOnLine === "If no ride for 10 minutes" ? styles.selections : styles.nonselections }
-             onPress={()=> this.updateOtherOnline("If no ride for 10 minutes")}>If no ride for 10 minutes</Text>
-          <Text style={this.state.otherOnLine === "If no ride for 15 minutes" ? styles.selections : styles.nonselections }
-             onPress={()=> this.updateOtherOnline("If no ride for 15 minutes")}>If no ride for 15 minutes</Text>
-        </View>
+      <View style={styles.container}>
+        <Text style={styles.title}>What app should always be active?</Text>
+          <View style={styles.options}>
+            <Text style={this.state.application === "Uber" ? styles.selections : styles.nonselections}
+               onPress={()=> this.updateApplication("Uber")}>Uber</Text>
+            <Text style={this.state.application === "Lyft" ? styles.selections : styles.nonselections}
+               onPress={()=> this.updateApplication("Lyft")}>Lyft</Text>
+          </View>
+        <Text style={styles.title}>When should the other come on-line?</Text>
+          <View style={styles.options}>
+            <Text style={this.state.otherOnLine === "Always" ? styles.selections : styles.nonselections }
+               onPress={()=> this.updateOtherOnline("Always")}>Always</Text>
+             <Text style={this.state.otherOnLine === "If no ride for 5 minutes" ? styles.selectionsMod : styles.nonselectionsMod }
+               onPress={()=> this.updateOtherOnline("If no ride for 5 minutes")}>If no ride for 5 minutes</Text>
+             <Text style={this.state.otherOnLine === "If no ride for 10 minutes" ? styles.selectionsMod : styles.nonselectionsMod }
+               onPress={()=> this.updateOtherOnline("If no ride for 10 minutes")}>If no ride for 10 minutes</Text>
+             <Text style={this.state.otherOnLine === "If no ride for 15 minutes" ? styles.selectionsMod : styles.nonselectionsMod }
+               onPress={()=> this.updateOtherOnline("If no ride for 15 minutes")}>If no ride for 15 minutes</Text>
+          </View>
         <Button
+          style={styles.nextbutton}
           onPress={this.checkState() ? this.navNextPreference.bind(this) : ()=>null}
           title={"Next Page"}
         />
@@ -103,10 +104,68 @@ const styles = StyleSheet.create({
     margin: 10
   },
   selections: {
-    color: 'green'
+    textAlign: "center",
+    fontSize: 20,
+    borderBottomWidth: 3,
+    borderTopWidth: 3,
+    borderRightWidth: 3,
+    borderLeftWidth: 3,
+    borderColor: "green",
+    height: 100,
+    width: 100,
+    marginLeft: 10,
+    paddingTop: 35
   },
   nonselections: {
-    color: 'black'
+    textAlign: "center",
+    fontSize: 20,
+    borderBottomWidth: 1,
+    borderTopWidth: 1,
+    borderRightWidth: 1,
+    borderLeftWidth: 1,
+    height: 100,
+    width: 100,
+    marginLeft: 10,
+    paddingTop: 35
+  },
+  selectionsMod: {
+    textAlign: "center",
+    fontSize: 20,
+    borderBottomWidth: 3,
+    borderTopWidth: 3,
+    borderRightWidth: 3,
+    borderLeftWidth: 3,
+    borderColor: "green",
+    height: 100,
+    width: 90,
+    marginLeft: 8,
+    paddingTop: 15
+  },
+  nonselectionsMod: {
+    textAlign: "center",
+    fontSize: 20,
+    borderBottomWidth: 1,
+    borderTopWidth: 1,
+    borderRightWidth: 1,
+    borderLeftWidth: 1,
+    height: 100,
+    width: 90,
+    marginLeft: 8,
+    paddingTop: 15
+  },
+  nextbutton: {
+    marginTop: 10
+  },
+  options: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "stretch",
+    marginTop: 20
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
+    marginTop: 20
   }
 });
 

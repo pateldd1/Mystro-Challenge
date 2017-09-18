@@ -48,15 +48,16 @@ class PreferenceThree extends React.Component {
   render()
   {
     return (
-      <View>
-        <View>
-          <Text>Do you want rides from carpool services?</Text>
-          <Text style={this.state.carPool === "Yes" ? styles.selections : styles.nonselections}
-            onPress={()=> this.updateCarPool("Yes")}>Yes</Text>
-          <Text style={this.state.carPool === "No" ? styles.selections : styles.nonselections}
-            onPress={()=> this.updateCarPool("No")}>No</Text>
-        </View>
+      <View style={styles.container}>
+        <Text style={styles.title}>Want rides from carpool services?</Text>
+          <View style={styles.options}>
+            <Text style={this.state.carPool === "Yes" ? styles.selections : styles.nonselections}
+              onPress={()=> this.updateCarPool("Yes")}>Yes</Text>
+            <Text style={this.state.carPool === "No" ? styles.selections : styles.nonselections}
+              onPress={()=> this.updateCarPool("No")}>No</Text>
+          </View>
         <Button
+          style={styles.nextbutton}
           onPress={this.checkState() ? this.submit.bind(this) : ()=> null}
           title={"Submit"}
         />
@@ -78,10 +79,43 @@ const styles = StyleSheet.create({
     margin: 10
   },
   selections: {
-    color: 'green'
+    textAlign: "center",
+    fontSize: 20,
+    borderBottomWidth: 3,
+    borderTopWidth: 3,
+    borderRightWidth: 3,
+    borderLeftWidth: 3,
+    borderColor: "green",
+    height: 100,
+    width: 120,
+    marginLeft: 15,
+    paddingTop: 35
   },
   nonselections: {
-    color: 'black'
+    textAlign: "center",
+    fontSize: 20,
+    borderBottomWidth: 1,
+    borderTopWidth: 1,
+    borderRightWidth: 1,
+    borderLeftWidth: 1,
+    height: 100,
+    width: 120,
+    marginLeft: 15,
+    paddingTop: 35
+  },
+  nextbutton: {
+    marginTop: 10
+  },
+  options: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "stretch",
+    marginTop: 20
+  },
+  title: {
+    fontSize: 25,
+    fontWeight: "bold",
+    marginTop: 20
   }
 });
 

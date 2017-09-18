@@ -60,20 +60,20 @@ class PreferenceOne extends React.Component {
   render()
   {
     return (
-      <View>
-        <View>
-          <Text>How far will you drive for a pickup?</Text>
-          <Text style={this.state.distance === "5" ? styles.selections : styles.nonselections}
-            onPress={()=> this.updateDistance("5")}>5 min</Text>
-          <Text style={this.state.distance === "10" ? styles.selections : styles.nonselections}
-            onPress={()=> this.updateDistance("10")}>10 min</Text>
-          <Text style={this.state.distance === "20" ? styles.selections : styles.nonselections}
-            onPress={()=> this.updateDistance("20")}>20 min</Text>
-          <Text style={this.state.distance === "Any" ? styles.selections : styles.nonselections}
-            onPress={()=> this.updateDistance("Any")}>Any</Text>
-        </View>
-        <View>
-          <Text>How far will you drive for a pickup?</Text>
+      <View style={styles.container}>
+        <Text style={styles.title}>How far will you drive for a pickup?</Text>
+          <View style={styles.options}>
+            <Text style={this.state.distance === "5" ? styles.selections : styles.nonselections}
+              onPress={()=> this.updateDistance("5")}>5 min</Text>
+            <Text style={this.state.distance === "10" ? styles.selections : styles.nonselections}
+              onPress={()=> this.updateDistance("10")}>10 min</Text>
+            <Text style={this.state.distance === "20" ? styles.selections : styles.nonselections}
+              onPress={()=> this.updateDistance("20")}>20 min</Text>
+            <Text style={this.state.distance === "Any" ? styles.selections : styles.nonselections}
+              onPress={()=> this.updateDistance("Any")}>Any</Text>
+          </View>
+        <Text style={styles.title}>Lowest passenger rating?</Text>
+        <View style={styles.options}>
           <Text style={this.state.passengerRating === "4.5" ? styles.selections : styles.nonselections}
             onPress={()=> this.updatePassengerRating("4.5")}>4.5</Text>
           <Text style={this.state.passengerRating === "4" ? styles.selections : styles.nonselections}
@@ -106,15 +106,43 @@ const styles = StyleSheet.create({
     margin: 10
   },
   selections: {
-    color: 'green',
-    fontSize: 20
+    textAlign: "center",
+    fontSize: 20,
+    borderBottomWidth: 3,
+    borderTopWidth: 3,
+    borderRightWidth: 3,
+    borderLeftWidth: 3,
+    borderColor: "green",
+    height: 100,
+    width: 80,
+    marginLeft: 10,
+    paddingTop: 35
   },
   nonselections: {
-    color: 'black',
-    fontSize: 20
+    textAlign: "center",
+    fontSize: 20,
+    borderBottomWidth: 1,
+    borderTopWidth: 1,
+    borderRightWidth: 1,
+    borderLeftWidth: 1,
+    height: 100,
+    width: 80,
+    marginLeft: 10,
+    paddingTop: 35
   },
   nextbutton: {
-    top: 400
+    marginTop: 10
+  },
+  options: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "stretch",
+    marginTop: 20
+  },
+  title: {
+    fontSize: 25,
+    fontWeight: "bold",
+    marginTop: 20
   }
 });
 
