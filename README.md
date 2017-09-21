@@ -1,7 +1,7 @@
 # Mystro Coding Challenge
 
 ### Functionality
-![demo1](/app/images/demo.gif)
+![demo1](/app/images/sliderAdd.gif)
 
 ### Logging In
 ![signin](/app/images/logging_in.gif)
