@@ -5,8 +5,9 @@
  */
 import {connect} from 'react-redux';
 import { loginUser, logoutUser, altLogoutUser,
-        requestPreferences, updatePreferences } from '../actions/userActions';
+        requestPreferences, updatePreferences, setRating } from '../actions/userActions';
 import React, { Component } from 'react';
+import SlidingComponent from './preference/slider';
 import {
   Alert,
   AppRegistry,
@@ -36,14 +37,17 @@ class Home extends Component {
   }
 
   componentDidUpdate(prevProps, prevState){
+    //If not logged in, just return.
     if ( !this.props.accessToken )
     {
       return;
     }
+    //Once logged in, request preferences
     if (prevProps.accessToken !== this.props.accessToken)
     {
       this.props.requestPreferences(this.props.idToken, this.props.user_id);
     }
+    //after logging in, see if the user needs to be taken to preferences or home page.
     else if (this.props.accessToken){
       this.navigation();
     }
@@ -57,11 +61,13 @@ class Home extends Component {
     for (let i = 0; i < prefKeys.length; i++)
     {
       //Checking if any preferences are available in the preferences object
+      //User either has all preferences set or no preferences set.
       if (preferences[prefKeys[i]]){
         return;
       }
     }
     //Pass Props of the User Id later to light up the preferences already selected - Extra
+    //Navigate to the preferences screen if there are no preferences set
     this.props.navigator.push({
       screen: 'PreferenceOne',
       title: 'Preferences 1',
@@ -89,7 +95,7 @@ class Home extends Component {
       case "distance":
         return `Willing to Drive ${val} minutes`;
       case "passengerRating":
-        return `Willing to pick up passengers with > ${val} rating`;
+        return `Willing to pick up passengers with > ${parseFloat(val).toFixed(1)} rating`;
       case "application":
         return `${val} will always be active`;
       case "otherOnLine":
@@ -114,9 +120,27 @@ class Home extends Component {
     )
   }
 
+  ratingBar(loggedIn){
+    if ( loggedIn )
+    {
+      let {passengerRating} = this.props.preferences;
+      return (
+        <SlidingComponent
+          userId={this.props.user_id}
+          idToken={this.props.idToken}
+          setRating={this.props.setRating}
+          rating={passengerRating}/>
+      )
+    }
+    else {
+      return null;
+    }
+  }
+
   render() {
     let loggedIn = this.props.accessToken ? true : false;
     let disp;
+    let ratingBar = this.ratingBar(loggedIn);
     if ( loggedIn )
     {
       disp = this.displayPreferences();
@@ -125,7 +149,9 @@ class Home extends Component {
       <View style={styles.container}>
         <Text style={styles.header}>Mystro</Text>
         {disp}
+        {ratingBar}
         <Button
+          style={styles.press}
           onPress={loggedIn ? this._onLogout : this._onLogin}
           title={loggedIn ? 'Log Out' : 'Log In'}
         />
@@ -181,7 +207,8 @@ let mapDispatchToProps = (dispatch) => {
     logoutUser: () => dispatch(logoutUser()),
     altLogoutUser: () => dispatch(altLogoutUser()),
     requestPreferences: (idToken, user_id) => dispatch(requestPreferences(idToken, user_id)),
-    updatePreferences: (idToken, user_id, prefs) => dispatch(updatePreferences(idToken, user_id, prefs))
+    updatePreferences: (idToken, user_id, prefs) => dispatch(updatePreferences(idToken, user_id, prefs)),
+    setRating: (idToken, user_id, rating) => dispatch(setRating(idToken, user_id, rating))
   };
 };
 

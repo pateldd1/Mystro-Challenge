@@ -42,11 +42,6 @@ class PreferenceOne extends React.Component {
     }
     return true;
   }
-  //Do this later to light up the preferences with CSS that are already selected
-  // componentDidMount() {
-  //   this.props.requestPreferences()
-  // }
-
 
   navNextPreference() {
     if ( !this.props.user_id )

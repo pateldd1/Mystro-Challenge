@@ -3,6 +3,7 @@ import Auth0 from 'react-native-auth0';
 RECEIVED_USER = 'RECEIVED_USER';
 UNAUTH_USER = 'UNAUTH_USER';
 RECEIVED_PREFERENCES = 'RECEIVED_PREFERENCES';
+CHANGE_RATING = 'CHANGE_RATING';
 
 let credentials = require('../auth0-credentials');
 const auth0 = new Auth0(credentials);
@@ -65,10 +66,35 @@ exports.updatePreferences = (idToken, user_id, prefs) => {
       .catch(e => console.log(e));
   }
 }
+exports.setRating = (idToken, user_id, rating) => {
+  return (dispatch, getState) => {
+    console.log(getState());
+    auth0.users(idToken)
+    .patchUser({ id: user_id, metadata: {
+      preferences: {
+        passengerRating: rating,
+        distance: getState().user.preferences.distance,
+        application: getState().user.preferences.application,
+        otherOnLine: getState().user.preferences.otherOnLine,
+        carPool: getState().user.preferences.carPool
+      }} })
+    .then(() => {
+      dispatch(changeRating(rating));
+    })
+    .catch(e => console.log(e));
+  }
+}
 
 exports.altLogoutUser = () => {
   return function(dispatch) {
     dispatch(unauthUser());
+  }
+}
+
+let changeRating = (rating) => {
+  return {
+    type: CHANGE_RATING,
+    rating
   }
 }
 

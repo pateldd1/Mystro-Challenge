@@ -2,6 +2,7 @@ import { merge } from 'lodash';
 RECEIVED_USER = 'RECEIVED_USER';
 UNAUTH_USER = 'UNAUTH_USER';
 RECEIVED_PREFERENCES = 'RECEIVED_PREFERENCES';
+CHANGE_RATING = 'CHANGE_RATING';
 
 let defaultState = {
   user_id: undefined,
@@ -35,6 +36,8 @@ module.exports = (state=defaultState, action) => {
       else {
         return Object.assign({}, state, { preferences: {} });
       }
+    case CHANGE_RATING:
+      return merge({}, state, {preferences: {passengerRating: action.rating.toString()}})
     default:
       return state;
   }
